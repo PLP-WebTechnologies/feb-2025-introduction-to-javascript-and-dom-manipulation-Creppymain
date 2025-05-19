@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .demo-box {
+            padding: 20px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            padding: 8px 16px;
+            background-color: #4285f4;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px 0;
+        }
+        #style-target {
+            width: 200px;
+            height: 100px;
+            background-color: #f1f1f1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px 0;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Interactive Demo</h1>
+    
+    <div class="demo-box">
+        <h2>1. Change Text Content</h2>
+        <p id="text-target">Original text content</p>
+        <button id="change-text-btn">Change Text</button>
+    </div>
+    
+    <div class="demo-box">
+        <h2>2. Modify CSS Styles</h2>
+        <div id="style-target">Click to change my style</div>
+        <button id="change-style-btn">Change Style</button>
+    </div>
+    
+    <div class="demo-box">
+        <h2>3. Toggle Element Visibility</h2>
+        <button id="toggle-element-btn">Toggle Element</button>
+        <div id="toggle-target" class="demo-box">
+            This element will appear/disappear
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
